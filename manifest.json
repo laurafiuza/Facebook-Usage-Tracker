@@ -21,6 +21,6 @@
 }
 /* Uses the following permissions:
  *  Nofitications: in order to send alerts to user about their usage
- *  History: to detect when a Facebook page is accessed
- *  Tabs: In order to detect when a Facebook page is not longer being used
+ *  Tabs: In order to detect when a Facebook page is being accessed from another tab
+ *  History: to detect when a Facebook page is being accessed from new page
 */
