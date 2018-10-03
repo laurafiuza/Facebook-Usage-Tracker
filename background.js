@@ -1,4 +1,5 @@
 var currentTimerState = "off";
+var numSeconds = 60;
 
 // Listener to detect when Facebook page is accessed
 // Checks currentTimerState variable to avoid adding new unnecessary timer
@@ -34,7 +35,7 @@ function startTimer() {
       {lastFocusedWindow: true, active: true},
       function(tab) {
         if (tab[0] != undefined && tab[0].url.indexOf("facebook") > -1) {
-          if (diff % 10 === 0) {
+          if (diff % numSeconds === 0) {
             notifyUser(diff);
           }
         }
