@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Usage Tracker",
+  "description": "Simple program that sends nofitications every several minutes while you're using Facebook, or other distracting website.",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["moment.js", "background.js"]
+  },
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "permissions": ["notifications", "tabs", "history"]
+}
+/* Uses the following permissions:
+ *  Nofitications: in order to send alerts to user about their usage
+ *  History: to detect when a Facebook page is accessed
+ *  Tabs: In order to detect when a Facebook page is not longer being used
+*/
